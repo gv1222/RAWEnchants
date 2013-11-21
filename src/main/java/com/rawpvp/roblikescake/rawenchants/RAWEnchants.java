@@ -1,12 +1,8 @@
 package com.rawpvp.roblikescake.rawenchants;
 
-import com.rawpvp.roblikescake.rawenchants.enchants.CurseEnchantment;
-import com.rawpvp.roblikescake.rawenchants.enchants.SlownessEnchantment;
+import com.rawpvp.roblikescake.rawenchants.enchants.*;
 import com.rit.sucy.EnchantPlugin;
 import com.rit.sucy.EnchantmentAPI;
-
-import com.rawpvp.roblikescake.rawenchants.enchants.BlindnessEnchantment;
-import com.rawpvp.roblikescake.rawenchants.enchants.PoisonEnchantment;
 
 public class RAWEnchants extends EnchantPlugin {
 
@@ -23,7 +19,8 @@ public class RAWEnchants extends EnchantPlugin {
 			new BlindnessEnchantment(),
 		    new PoisonEnchantment(),
 			new CurseEnchantment(),
-			new SlownessEnchantment()
+			new SlownessEnchantment(),
+			new LifeStealEnchantment()
 		);
 	}
 }
