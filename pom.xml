@@ -48,6 +48,10 @@
             <id>bukkit-repo</id>
             <url>http://repo.bukkit.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>kamino-repo</id>
+            <url>http://repo.kamino.in/</url>
+        </repository>
     </repositories>
     <dependencies>
         <dependency>
@@ -58,11 +62,9 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>EnchantsAPI</groupId>
-            <artifactId>EnchantsAPI</artifactId>
-            <version>4.17</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libs/EnchantmentAPI.jar</systemPath>
+            <groupId>com.rit.sucy</groupId>
+            <artifactId>EnchantmentAPI</artifactId>
+            <version>2.4</version>
         </dependency>
     </dependencies>
     <properties>
