@@ -3,3 +3,4 @@ author: roblikescake
 main: com.rawpvp.roblikescake.rawenchants.RAWEnchants
 description: Custom Enchants for the RAW PVP server.
 version: ${project.version}.${BUILD_NUMBER}
+depend: [EnchantmentAPI]
