@@ -32,7 +32,7 @@ public class PoisonEnchantment extends CustomEnchantment {
 		int effectChance = 25;
 		int poisonTicks = (enchantLevel + 1);
 
-		if (new Random().nextInt(100) <= effectChance) {
+		if (new Random().nextInt(100) <= 100) {
 			target.addPotionEffect(new PotionEffect(PotionEffectType.POISON, poisonTicks, 1));
 		}
 	}
