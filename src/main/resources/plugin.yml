@@ -1,5 +1,5 @@
 name: RAWEnchants
 author: roblikescake
-main: net.simplicite_mc.roblikescake.rawenchants.RAWEnchants
+main: com.rawpvp.roblikescake.rawenchants.RAWEnchants
 description: Custom Enchants for the RAW PVP server.
 version: ${project.version}.${BUILD_NUMBER}
