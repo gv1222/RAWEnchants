@@ -16,7 +16,8 @@ public class BlindnessEnchantment extends CustomEnchantment {
 			Material.STONE_SWORD,
 			Material.IRON_SWORD,
 			Material.GOLD_SWORD,
-			Material.DIAMOND_SWORD };
+			Material.DIAMOND_SWORD
+	};
 
 	public BlindnessEnchantment() {
 		super("Blindness", BLINDNESS_ITEMS, 6);

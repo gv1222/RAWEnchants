@@ -16,7 +16,8 @@ public class PoisonEnchantment extends CustomEnchantment {
 			Material.STONE_SWORD,
 			Material.IRON_SWORD,
 			Material.GOLD_SWORD,
-			Material.DIAMOND_SWORD };
+			Material.DIAMOND_SWORD
+	};
 
 	public PoisonEnchantment() {
 		super("Poison", POISON_ITEMS, 5);
