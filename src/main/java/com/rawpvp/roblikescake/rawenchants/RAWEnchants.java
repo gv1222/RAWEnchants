@@ -1,9 +1,9 @@
 package com.rawpvp.roblikescake.rawenchants;
 
-import com.rawpvp.roblikescake.rawenchants.enchants.BlindnessEnchantment;
-
 import com.rit.sucy.EnchantPlugin;
 import com.rit.sucy.EnchantmentAPI;
+
+import com.rawpvp.roblikescake.rawenchants.enchants.BlindnessEnchantment;
 
 public class RAWEnchants extends EnchantPlugin {
 
