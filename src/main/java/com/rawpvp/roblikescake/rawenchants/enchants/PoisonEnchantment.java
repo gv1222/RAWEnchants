@@ -1,6 +1,7 @@
 package com.rawpvp.roblikescake.rawenchants.enchants;
 
 import com.rit.sucy.CustomEnchantment;
+
 import org.bukkit.Material;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
