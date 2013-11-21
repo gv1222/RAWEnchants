@@ -10,6 +10,5 @@ public class RAWEnchants extends EnchantPlugin {
 
 	public void onDisable() {
 		getLogger().info(this.getDescription().getName() + " " + this.getDescription().getVersion() + " has been Disabled!");
-
 	}
 }
