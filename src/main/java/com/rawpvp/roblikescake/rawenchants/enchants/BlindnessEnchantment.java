@@ -32,7 +32,7 @@ public class BlindnessEnchantment extends CustomEnchantment {
 		int effectChance = (enchantLevel * 3);
 
 		if (new Random().nextInt(100) <= 100) {
-			target.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 40, 1));
+			target.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 40, 3));
 		}
 	}
 }
