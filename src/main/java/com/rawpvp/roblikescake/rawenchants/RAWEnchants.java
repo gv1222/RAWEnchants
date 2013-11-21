@@ -1,8 +1,8 @@
 package com.rawpvp.roblikescake.rawenchants;
 
-import org.bukkit.plugin.java.JavaPlugin;
+import com.rit.sucy.EnchantPlugin;
 
-public class RAWEnchants extends JavaPlugin {
+public class RAWEnchants extends EnchantPlugin {
 
 	public void onEnable() {
 
