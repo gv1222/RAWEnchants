@@ -1,5 +1,6 @@
 package com.rawpvp.roblikescake.rawenchants;
 
+import com.rawpvp.roblikescake.rawenchants.enchants.CurseEnchantment;
 import com.rit.sucy.EnchantPlugin;
 import com.rit.sucy.EnchantmentAPI;
 
@@ -17,7 +18,10 @@ public class RAWEnchants extends EnchantPlugin {
 	}
 
 	public void registerEnchantments() {
-		EnchantmentAPI.registerCustomEnchantment(new BlindnessEnchantment());
-		EnchantmentAPI.registerCustomEnchantment(new PoisonEnchantment());
+		EnchantmentAPI.registerCustomEnchantments(
+			new BlindnessEnchantment(),
+		    new PoisonEnchantment(),
+			new CurseEnchantment()
+		);
 	}
 }
