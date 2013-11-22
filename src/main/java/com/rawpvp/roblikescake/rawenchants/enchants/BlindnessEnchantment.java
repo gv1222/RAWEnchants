@@ -29,8 +29,8 @@ public class BlindnessEnchantment extends CustomEnchantment {
 
 	@Override
 	public void applyEffect(LivingEntity user, LivingEntity target, int enchantLevel, EntityDamageByEntityEvent event) {
-		int effectChance = (enchantLevel * 3);
-		int effectTime = (enchantLevel * 20);
+		int effectChance = (enchantLevel * 4);
+		int effectTime = (enchantLevel * 30);
 
 		if (new Random().nextInt(100) <= effectChance) {
 			target.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, effectTime, 3));
