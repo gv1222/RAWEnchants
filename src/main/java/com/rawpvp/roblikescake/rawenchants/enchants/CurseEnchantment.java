@@ -20,7 +20,7 @@ public class CurseEnchantment extends CustomEnchantment {
 	};
 
 	public CurseEnchantment() {
-		super("Curse", CURSE_ITEMS, 2);
+		super("Curse", CURSE_ITEMS, 3);
 		description = "Withers enemy on hit";
 		this.max = 2;
 		this.base = 20;
