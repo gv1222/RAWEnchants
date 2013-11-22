@@ -20,7 +20,7 @@ public class BlindnessEnchantment extends CustomEnchantment {
 	};
 
 	public BlindnessEnchantment() {
-		super("Blindness", BLINDNESS_ITEMS, 6);
+		super("Blindness", BLINDNESS_ITEMS, 3);
 		description = "Blinds enemy on hit";
 		this.max = 3;
 		this.base = 1;
