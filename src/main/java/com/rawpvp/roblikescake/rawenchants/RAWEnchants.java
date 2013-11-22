@@ -19,6 +19,7 @@ public class RAWEnchants extends EnchantPlugin {
 			new BlindnessEnchantment(),
 			new ConfusionEnchantment(),
 			new CurseEnchantment(),
+			new FishermanEnchantment(),
 			new InvisibilityStaffEnchantment(),
 			new LifeStealEnchantment(),
 			new PestilenceEnchantment(),
