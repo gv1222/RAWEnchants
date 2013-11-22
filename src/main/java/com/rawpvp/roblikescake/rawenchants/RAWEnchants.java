@@ -17,11 +17,11 @@ public class RAWEnchants extends EnchantPlugin {
 	public void registerEnchantments() {
 		EnchantmentAPI.registerCustomEnchantments(
 			new BlindnessEnchantment(),
-		    new PoisonEnchantment(),
+			new ConfusionEnchantment(),
 			new CurseEnchantment(),
-			new SlownessEnchantment(),
 			new LifeStealEnchantment(),
-			new ConfusionEnchantment()
+			new PoisonEnchantment(),
+			new SlownessEnchantment()
 		);
 	}
 }
