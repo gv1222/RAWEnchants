@@ -33,7 +33,7 @@ public class ConfusionEnchantment extends CustomEnchantment{
 		int effectChance = (enchantLevel * 3);
 		int effectTime = (enchantLevel * 40);
 
-		if (new Random().nextInt(100) <= 100) {
+		if (new Random().nextInt(100) <= effectChance) {
 			target.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, effectTime, 3));
 		}
 	}

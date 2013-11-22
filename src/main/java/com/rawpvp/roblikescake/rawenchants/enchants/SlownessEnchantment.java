@@ -33,7 +33,7 @@ public class SlownessEnchantment extends CustomEnchantment{
 		int effectChance = (enchantLevel * 15);
 		int effectTime = (enchantLevel * 10);
 
-		if (new Random().nextInt(100) <= 100) {
+		if (new Random().nextInt(100) <= effectChance) {
 			target.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, effectTime, 2));
 		}
 	}
