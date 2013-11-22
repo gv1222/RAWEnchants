@@ -21,7 +21,7 @@ public class SlownessEnchantment extends CustomEnchantment{
 	};
 
 	public SlownessEnchantment() {
-		super("Slowness", SLOWNESS_ITEMS, 6);
+		super("Slowness", SLOWNESS_ITEMS, 3);
 		description = "Slows enemy on hit";
 		this.max = 4;
 		this.base = 1;
