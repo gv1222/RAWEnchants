@@ -20,7 +20,8 @@ public class RAWEnchants extends EnchantPlugin {
 		    new PoisonEnchantment(),
 			new CurseEnchantment(),
 			new SlownessEnchantment(),
-			new LifeStealEnchantment()
+			new LifeStealEnchantment(),
+			new ConfusionEnchantment()
 		);
 	}
 }
