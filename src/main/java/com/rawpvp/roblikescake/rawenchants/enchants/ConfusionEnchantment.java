@@ -23,15 +23,15 @@ public class ConfusionEnchantment extends CustomEnchantment{
 	public ConfusionEnchantment() {
 		super("Confusion", CONFUSION_ITEMS, 3);
 		description = "Confuses enemy on hit";
-		this.max = 1;
-		this.base = 25;
+		this.max = 2;
+		this.base = 15;
 		this.interval = 10;
 	}
 
 	@Override
 	public void applyEffect(LivingEntity user, LivingEntity target, int enchantLevel, EntityDamageByEntityEvent event) {
-		int effectChance = (enchantLevel * 3);
-		int effectTime = (enchantLevel * 40);
+		int effectChance = (enchantLevel * 10);
+		int effectTime = (enchantLevel * 30);
 
 		if (new Random().nextInt(100) <= effectChance) {
 			target.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, effectTime, 3));
