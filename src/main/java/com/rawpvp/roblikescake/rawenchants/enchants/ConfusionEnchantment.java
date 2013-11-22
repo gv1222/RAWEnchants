@@ -21,7 +21,7 @@ public class ConfusionEnchantment extends CustomEnchantment{
 	};
 
 	public ConfusionEnchantment() {
-		super("Confusion", CONFUSION_ITEMS, 4);
+		super("Confusion", CONFUSION_ITEMS, 3);
 		description = "Confuses enemy on hit";
 		this.max = 1;
 		this.base = 25;
