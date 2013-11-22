@@ -30,10 +30,10 @@ public class PoisonEnchantment extends CustomEnchantment {
 	@Override
 	public void applyEffect(LivingEntity user, LivingEntity target, int enchantLevel, EntityDamageByEntityEvent event) {
 		int effectChance = 25;
-		int poisonTicks = (enchantLevel + 1);
+		int effectTime = (enchantLevel * 20);
 
 		if (new Random().nextInt(100) <= 100) {
-			target.addPotionEffect(new PotionEffect(PotionEffectType.POISON, poisonTicks, 1));
+			target.addPotionEffect(new PotionEffect(PotionEffectType.POISON, effectTime, 2));
 		}
 	}
 }

@@ -31,10 +31,10 @@ public class ConfusionEnchantment extends CustomEnchantment{
 	@Override
 	public void applyEffect(LivingEntity user, LivingEntity target, int enchantLevel, EntityDamageByEntityEvent event) {
 		int effectChance = (enchantLevel * 3);
-		int confusionTime = (enchantLevel * 20);
+		int effectTime = (enchantLevel * 40);
 
 		if (new Random().nextInt(100) <= 100) {
-			target.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, confusionTime, 3));
+			target.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, effectTime, 3));
 		}
 	}
 }

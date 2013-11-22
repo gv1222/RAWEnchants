@@ -30,9 +30,10 @@ public class CurseEnchantment extends CustomEnchantment {
 	@Override
 	public void applyEffect(LivingEntity user, LivingEntity target, int enchantLevel, EntityDamageByEntityEvent event) {
 		int effectChance = (enchantLevel * 5);
+		int effectTime = (enchantLevel * 40);
 
 		if (new Random().nextInt(100) <= 100) {
-			target.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 2, 1));
+			target.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, effectTime, 1));
 		}
 	}
 }

@@ -31,9 +31,10 @@ public class SlownessEnchantment extends CustomEnchantment{
 	@Override
 	public void applyEffect(LivingEntity user, LivingEntity target, int enchantLevel, EntityDamageByEntityEvent event) {
 		int effectChance = (enchantLevel * 15);
+		int effectTime = (enchantLevel * 20);
 
 		if (new Random().nextInt(100) <= 100) {
-			target.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 60, 1));
+			target.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, effectTime, 2));
 		}
 	}
 }
