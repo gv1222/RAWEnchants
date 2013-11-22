@@ -20,7 +20,7 @@ public class PoisonEnchantment extends CustomEnchantment {
 	};
 
 	public PoisonEnchantment() {
-		super("Poison", POISON_ITEMS, 5);
+		super("Poison", POISON_ITEMS, 3);
 		description = "Poisons enemy on hit";
 		this.max = 2;
 		this.base = 5;
