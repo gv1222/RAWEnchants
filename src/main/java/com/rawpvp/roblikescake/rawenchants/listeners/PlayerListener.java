@@ -1,5 +1,8 @@
 package com.rawpvp.roblikescake.rawenchants.listeners;
 
+import com.rawpvp.roblikescake.rawenchants.enchants.FishermanEnchantment;
+import com.rawpvp.roblikescake.rawenchants.enchants.HotRodEnchantment;
+
 import com.rit.sucy.EnchantmentAPI;
 
 import org.bukkit.Material;
@@ -32,7 +35,7 @@ public class PlayerListener implements Listener{
 	}
 
 	public void applyFishermenEnchantmentEffect(ItemStack caughtFish) {
-		int effectChance = 5;
+		int effectChance = (FishermanEnchantment.enchantmentLevel * 2);
 
 		if (new Random().nextInt(100) <= effectChance) {
 			caughtFish.setAmount(2);
@@ -40,7 +43,7 @@ public class PlayerListener implements Listener{
 	}
 
 	public void applyHotRodEnchantmentEffect(ItemStack caughtFish) {
-		int effectChance = 5;
+		int effectChance = (HotRodEnchantment.enchantmentLevel * 33);
 
 		if (new Random().nextInt(100) <= effectChance) {
 			caughtFish.setType(Material.COOKED_FISH);

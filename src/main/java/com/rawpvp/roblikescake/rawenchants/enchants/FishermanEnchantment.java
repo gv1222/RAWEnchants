@@ -19,7 +19,9 @@ public class FishermanEnchantment extends CustomEnchantment {
 		this.interval = 5;
 	}
 
+	public static int enchantmentLevel;
+
 	public void applyMiscEffect(Player player, int enchantLevel, PlayerInteractEvent event) {
-		player.sendMessage("Are we fishing yet?");
+		enchantmentLevel = enchantLevel;
 	}
 }
