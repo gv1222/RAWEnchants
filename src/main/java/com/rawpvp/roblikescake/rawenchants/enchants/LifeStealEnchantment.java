@@ -4,6 +4,7 @@ import com.rit.sucy.CustomEnchantment;
 
 import org.bukkit.Material;
 import org.bukkit.entity.LivingEntity;
+import org.bukkit.entity.Player;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 
 import java.util.Random;
@@ -31,10 +32,28 @@ public class LifeStealEnchantment extends CustomEnchantment {
 
 		if (new Random().nextInt(100) <= 100) {
 			double targetHealth = target.getHealth();
-			double userHealth = user.getHealth();
 
 			target.setHealth(targetHealth - 1);
-			user.setHealth(userHealth + 1);
+			addHealth(user, 1.0D);
+		}
+	}
+
+	/**
+	 * @author faydewey
+	**/
+	public void addHealth(LivingEntity user, double amount) {
+		Player player = (Player) user;
+		double current = player.getHealth();
+		double max = player.getMaxHealth();
+
+		if (current <= 0.0D) {
+			return;
+		}
+
+		if (current + amount > max) {
+			player.setHealth(max);
+		} else {
+			player.setHealth(current + amount);
 		}
 	}
 }
