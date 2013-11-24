@@ -30,7 +30,7 @@ public class LifeStealEnchantment extends CustomEnchantment {
 	public void applyEffect(LivingEntity user, LivingEntity target, int enchantLevel, EntityDamageByEntityEvent event) {
 		int effectChance = (enchantLevel * 10);
 
-		if (new Random().nextInt(100) <= 100) {
+		if (new Random().nextInt(100) <= effectChance) {
 			double targetHealth = target.getHealth();
 
 			target.setHealth(targetHealth - 1);

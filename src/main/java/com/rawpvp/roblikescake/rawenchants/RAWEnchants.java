@@ -2,6 +2,7 @@ package com.rawpvp.roblikescake.rawenchants;
 
 import com.rawpvp.roblikescake.rawenchants.enchants.*;
 import com.rawpvp.roblikescake.rawenchants.listeners.PlayerListener;
+
 import com.rit.sucy.EnchantPlugin;
 import com.rit.sucy.EnchantmentAPI;
 
